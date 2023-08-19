@@ -1,0 +1,182 @@
+Seção 1: Introdução ao JavaScript
+
+Conceito: Explique o que é JavaScript e seu papel na web,
+como uma linguagem de programação que permite tornar as páginas da web interativas.
+
+Exemplo: Mostre uma página HTML simples com um botão e explique como o JavaScript 
+pode ser usado para fazer algo acontecer quando o botão é clicado (por exemplo, exibir uma mensagem).
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo JavaScript</title>
+</head>
+<body>
+    <button id="meuBotao">Clique em mim</button>
+    <script>
+        // Aqui vem o código JavaScript
+    </script>
+</body>
+</html>
+
+Seção 2: Variáveis e Tipos de Dados
+
+Conceito: Introduza variáveis e os tipos de dados básicos em JavaScript (números, strings, booleanos).
+
+Exemplo: Declare variáveis e atribua valores a elas, em seguida, mostre como você pode usar essas variáveis em operações simples.
+
+Conceito: Introduza variáveis e os tipos de dados básicos em JavaScript (números, strings, booleanos).
+
+Exemplo: Declare variáveis e atribua valores a elas, em seguida, mostre como você pode usar essas variáveis em operações simples.
+
+Seção 3:
+
+introduza o conceito de tipagem fraca, onde as variáveis não têm tipos fixos.
+
+Exemplo: Mostre como você pode reatribuir diferentes tipos de dados a uma variável em JavaScript.
+
+var x = 10;       // x é um número
+x = "Hello";      // x agora é uma string
+x = true;         // x agora é um booleano
+
+Seção 4: Variáveis com var, let e const
+
+Conceito: Explique as diferenças entre var, let e const na declaração de variáveis em JavaScript.
+
+var: Escopo de função ou global, permite reatribuição.
+let: Escopo de bloco, permite reatribuição.
+const: Escopo de bloco, não permite reatribuição (valor constante).
+
+Exemplo: Demonstração das diferenças usando var, let e const.
+
+var a = 10;
+let b = 20;
+const c = 30;
+
+a = 5;   // Isso é permitido com var
+b = 15;  // Isso é permitido com let
+// c = 25;  // Isso gerará um erro, pois c é constante
+
+Seção 5: Estruturas de Controle de Fluxo
+
+Conceito: Ensine sobre instruções condicionais (if, else) e loops (for, while).
+
+Exemplo: Demonstre como usar um loop for para exibir os números de 1 a 5.
+
+for (var i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+Seção 6: Funções
+
+Conceito: Explique como as funções funcionam em JavaScript, como declará-las, passar argumentos e retornar valores.
+
+Exemplo: Crie uma função simples que adicione dois números e retorne o resultado.
+
+function somar(a, b) {
+    return a + b;
+}
+
+var resultado = somar(5, 3);
+console.log(resultado);
+
+Projeto: Calculadora Simples
+
+Agora que seus alunos têm uma compreensão básica de JavaScript, você pode criar um projeto simples para consolidar esses conceitos. 
+Sugiro uma calculadora que some, subtraia, multiplique e divida dois números. Isso envolverá variáveis, 
+funções e estruturas de controle.
+
+HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <p id="resultado"></p>
+
+    <script>
+        // Funções para realizar operações
+        function somar() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = num1 + num2;
+            document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        }
+
+        function subtrair() {
+            // Implemente a função de subtração aqui
+        }
+
+        function multiplicar() {
+            // Implemente a função de multiplicação aqui
+        }
+
+        function dividir() {
+            // Implemente a função de divisão aqui
+        }
+    </script>
+</body>
+</html>
+
+Projeto: Calculadora Simples com o uso do var let const
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <p id="resultado"></p>
+
+    <script>
+        // Funções para realizar operações
+        function somar() {
+            const num1 = parseFloat(document.getElementById("numero1").value);
+            const num2 = parseFloat(document.getElementById("numero2").value);
+            const resultado = num1 + num2;
+            document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        }
+
+        function subtrair() {
+            let num1 = parseFloat(document.getElementById("numero1").value);
+            let num2 = parseFloat(document.getElementById("numero2").value);
+            const resultado = num1 - num2;
+            document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        }
+
+        function multiplicar() {
+            let num1 = parseFloat(document.getElementById("numero1").value);
+            let num2 = parseFloat(document.getElementById("numero2").value);
+            const resultado = num1 * num2;
+            document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        }
+
+        function dividir() {
+            let num1 = parseFloat(document.getElementById("numero1").value);
+            let num2 = parseFloat(document.getElementById("numero2").value);
+            if (num2 !== 0) {
+                const resultado = num1 / num2;
+                document.getElementById("resultado").textContent = "Resultado: " + resultado;
+            } else {
+                document.getElementById("resultado").textContent = "Não é possível dividir por zero.";
+            }
+        }
+    </script>
+</body>
+</html>
