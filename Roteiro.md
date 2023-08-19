@@ -5,12 +5,14 @@
 **Conceito:** JavaScript na web e Tipagem Fraca
 
 **Exemplo:** Variáveis em JavaScript podem ter tipos variados:
+
 ```javascript
 var x = 10;       // x é um número
 x = "Hello";      // x agora é uma string
 x = true;         // x agora é um booleano
 
 Seção 2: Variáveis com var, let e const
+
 Conceito: Diferenças entre var, let, e const
 
 var: Escopo de função ou global, permite reatribuição.
@@ -28,6 +30,7 @@ b = 15;  // Isso é permitido com let
 // c = 25;  // Isso gerará um erro, pois c é constante
 
 Seção 3: Atualizando o Projeto da Calculadora
+
 Atualize o projeto da calculadora para usar let e const, e explique como a tipagem fraca funciona ao receber valores do usuário.
 
 HTML:
@@ -84,4 +87,30 @@ HTML:
 </body>
 </html>
 
+Seção 4: Tipos de Dados em JavaScript
+Number
+Conceito: O tipo Number representa valores numéricos, inteiros ou de ponto flutuante.
+
+Exemplo: Declarando e usando números em JavaScript.
+
+let idade = 30;
+let preco = 19.99;
+
+Math
+
+Conceito: O objeto Math fornece funções matemáticas para realizar cálculos complexos.
+
+Exemplo: Usando o objeto Math para calcular a raiz quadrada.
+
+javascript
+
+let numero = 16;
+let raizQuadrada = Math.sqrt(numero);
+console.log(raizQuadrada); // Saída: 4
+
+String
+
+Conceito: O tipo String representa sequências de caracteres.
+
+Exemplo: Declarando e manipulando strings.
 

@@ -180,3 +180,9 @@ Projeto: Calculadora Simples com o uso do var let const
     </script>
 </body>
 </html>
+
+Neste exemplo atualizado, usamos const onde o valor não muda, e let onde os valores podem mudar.
+Além disso, a tipagem fraca é demonstrada ao converter os valores dos campos de entrada para números
+(mesmo que inicialmente sejam strings).
+
+Dica: Certifique-se de explicar esses conceitos enquanto guia seus alunos através deste exemplo.
